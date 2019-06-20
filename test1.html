@@ -1,0 +1,1145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Movie Library | 1337x</title>
+<meta name="description" content="Browse movies in a organized view and download in multiple qualities.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/css/jquery-ui.css">
+<link rel="stylesheet" href="/static/css/icons.css">
+<link rel="stylesheet" href="/static/css/modal.css">
+<link rel="stylesheet" href="/static/css/fancySelect.css">
+<link rel="stylesheet" href="/static/css/scrollbar.css">
+<link rel="stylesheet" href="/static/css/style.css?ver=2.5">
+<link rel="shortcut icon" href="/favicon.ico">
+<!--[if lt IE 9]><script src = "/js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<div class="mobile-menu"></div>
+<div class="top-bar">
+<div class="container">
+<ul class="top-bar-nav">
+<li><a href="/register/index.html">Register</a></li>
+<li class="active"><a href="/register/index.html">Login</a></li>
+</ul>
+</div>
+</div>
+<header>
+<div class="container">
+<div class="clearfix">
+<div class="logo"><a href="/"><img alt="logo" src="/images/logo.svg"></a></div>
+<a href="#" class="navbar-menu"><span></span><span></span><span></span></a>
+<div class="search-box xg"><script>
+      function goSearch(){
+	if ($('#autocomplete').val())
+		window.location = "/search/"+escape($('#autocomplete').val())+"/1/";
+                return false
+	}
+</script>
+<form id="search-form" method="get" onSubmit="return goSearch();">
+<input type="search" placeholder="Search for torrents.." id="autocomplete" name="search" class="ui-autocomplete-input form-control" autocomplete="off">
+<button type="submit" onClick="goSearch()" class="btn btn-search"><i class="flaticon-search"></i><span>Search</span></button>
+</form>
+</div>
+</div>
+<nav>
+<ul class="main-navigation">
+<li class="active"><a href="/home/" title="Go to Home">Home</a></li>
+<li><a target="_blank" href="https://thekickasstorrents.com" title="kickass">Kickass</a></li>
+<li><a target="_blank" href="https://wwv.solarmovie.one" title="solarmovie">SolarMovie</a></li>
+<li><a target="_blank" href="https://ww2.123movie.la" title="123movies">123Movies</a></li>
+<li><a target="_blank" href="https://piratebay-proxy.org" title="piratebay">PirateBay</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main class="container">
+<div class="row">
+<aside class="col-3 pull-right">
+<div class="list-box">
+<h2>Browse torrents</h2>
+<ul>
+<li><a href="/trending" title="Trending Torrents"><i class="flaticon-trending"></i> Trending Torrents</a></li>
+<li><a href="/movie-library/1/" title="Movie Library"><i class="flaticon-movie-library"></i> Movie library</a></li>
+<li><a href="/series-library/a/1/" title="TV Library"><i class="flaticon-tv-library"></i> TV library</a></li>
+<li><a href="/new-episodes/day/1/" title="New TV Episodes"><i class="flaticon-tv"></i> New TV Episodes</a></li>
+<li><a href="/top-100" title="Top 100 Torrents"><i class="flaticon-top"></i> Top 100 Torrents</a></li>
+<li><a href="/cat/Anime/1/" title="Anime"><i class="flaticon-ninja-portrait"></i> Anime</a></li>
+<li><a href="/cat/Apps/1/" title="Applications"><i class="flaticon-apps"></i> Applications</a></li>
+<li><a href="/cat/Documentaries/1/" title="Documentaries"><i class="flaticon-documentary"></i> Documentaries</a></li>
+<li><a href="/cat/Games/1/" title="Games"><i class="flaticon-games"></i> Games</a></li>
+<li><a href="/cat/Movies/1/" title="Movies"><i class="flaticon-movies"></i> Movies</a></li>
+<li><a href="/cat/Music/1/" title="Movies"><i class="flaticon-music"></i> Music</a></li>
+<li><a href="/cat/Other/1/" title="Others"><i class="flaticon-other"></i> Other</a></li>
+<li><a href="/cat/TV/1/" title="Television"><i class="flaticon-tv"></i> Television</a></li>
+<li><a href="/cat/XXX/1/" title="XXX"><i class="flaticon-xxx"></i> XXX</a></li>
+</ul>
+</div>
+<div class="list-box hidden-sm">
+<h2>1337x Links</h2>
+<ul class="list">
+<li><a target="_blank" href="https://www.torrent411.li"> T411</a></li>
+<li><a target="_blank" href="https://www6.cpasbiens.co">Cpasbien</a></li>
+<li><a target="_blank" href="https://kickass.sx">Kickass</a></li>
+<li><a target="_blank" href="https://kickass.sx">KickassTorrents</a></li>
+<li><a target="_blank" href="https://1337xto.to">1337x</a></li>
+<li><a target="_blank" href="https://thekickasstorrents.com">Kickass</a></li>
+<li><a target="_blank" href="https://wwv.solarmovie.one">SolarMovie</a></li>
+</ul>
+</div>
+</aside>
+<div class="col-9 page-content">
+<div class="filter">
+<form method="post" action="/libredir" class="form-inline">
+<div class="form-row sort-genre">
+<label>Genre</label>
+<select name="genre" class="select">
+<option value="all">All</option>
+<option value="Action">Action</option>
+<option value="Adventure">Adventure</option>
+<option value="Animation">Animation</option>
+<option value="British">British</option>
+<option value="Comedy">Comedy</option>
+<option value="Crime">Crime</option>
+<option value="Disaster">Disaster</option>
+<option value="Documentary">Documentary</option>
+<option value="Drama">Drama</option>
+<option value="Eastern">Eastern</option>
+<option value="Erotic">Erotic</option>
+<option value="Family">Family</option>
+<option value="Fan Film">Fan Film</option>
+<option value="Fantasy">Fantasy</option>
+<option value="Film Noir">Film Noir</option>
+<option value="Foreign">Foreign</option>
+<option value="History">History</option>
+<option value="Holiday">Holiday</option>
+<option value="Horror">Horror</option>
+<option value="Indie">Indie</option>
+<option value="Kids">Kids</option>
+<option value="Music">Music</option>
+<option value="Musical">Musical</option>
+<option value="Mystery">Mystery</option>
+<option value="Neo-noir">Neo-noir</option>
+<option value="Road Movie">Road Movie</option>
+<option value="Romance">Romance</option>
+<option value="Science Fiction">Science Fiction</option>
+<option value="Short">Short</option>
+<option value="Sport">Sport</option>
+<option value="Sporting Event">Sporting Event</option>
+<option value="Sports Film">Sports Film</option>
+<option value="Suspense">Suspense</option>
+<option value="TV Movie">TV Movie</option>
+<option value="Thriller">Thriller</option>
+<option value="War">War</option>
+<option value="Western">Western</option>
+</select>
+</div>
+<div class="form-row sort-year">
+<label>Year</label>
+<select name="year" class="select">
+<option value="all">All</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+<option value="2016">2016</option>
+<option value="2015">2015</option>
+<option value="2014">2014</option>
+<option value="2013">2013</option>
+<option value="2012">2012</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>
+<option value="2008">2008</option>
+<option value="2007">2007</option>
+<option value="2006">2006</option>
+<option value="2005">2005</option>
+<option value="2004">2004</option>
+<option value="2003">2003</option>
+<option value="2002">2002</option>
+<option value="2001">2001</option>
+<option value="2000">2000</option>
+<option value="1999">1999</option>
+<option value="1998">1998</option>
+<option value="1997">1997</option>
+<option value="1996">1996</option>
+<option value="1995">1995</option>
+<option value="1994">1994</option>
+<option value="1993">1993</option>
+<option value="1992">1992</option>
+<option value="1991">1991</option>
+<option value="1990">1990</option>
+<option value="1989">1989</option>
+<option value="1988">1988</option>
+<option value="1987">1987</option>
+<option value="1986">1986</option>
+<option value="1985">1985</option>
+<option value="1984">1984</option>
+<option value="1983">1983</option>
+<option value="1982">1982</option>
+<option value="1981">1981</option>
+<option value="1980">1980</option>
+<option value="1979">1979</option>
+<option value="1978">1978</option>
+<option value="1977">1977</option>
+<option value="1976">1976</option>
+<option value="1975">1975</option>
+<option value="1974">1974</option>
+<option value="1973">1973</option>
+<option value="1972">1972</option>
+<option value="1971">1971</option>
+<option value="1970">1970</option>
+<option value="1969">1969</option>
+<option value="1968">1968</option>
+<option value="1967">1967</option>
+<option value="1966">1966</option>
+<option value="1965">1965</option>
+<option value="1964">1964</option>
+<option value="1963">1963</option>
+<option value="1962">1962</option>
+<option value="1961">1961</option>
+<option value="1960">1960</option>
+<option value="1959">1959</option>
+<option value="1958">1958</option>
+<option value="1957">1957</option>
+<option value="1956">1956</option>
+<option value="1955">1955</option>
+<option value="1954">1954</option>
+<option value="1953">1953</option>
+<option value="1952">1952</option>
+<option value="1951">1951</option>
+<option value="1950">1950</option>
+<option value="1949">1949</option>
+<option value="1948">1948</option>
+<option value="1947">1947</option>
+<option value="1946">1946</option>
+<option value="1945">1945</option>
+<option value="1944">1944</option>
+<option value="1943">1943</option>
+<option value="1942">1942</option>
+<option value="1941">1941</option>
+<option value="1940">1940</option>
+<option value="1939">1939</option>
+<option value="1938">1938</option>
+<option value="1936">1936</option>
+<option value="1935">1935</option>
+<option value="1934">1934</option>
+<option value="1933">1933</option>
+<option value="1932">1932</option>
+<option value="1931">1931</option>
+<option value="1930">1930</option>
+<option value="1929">1929</option>
+<option value="1928">1928</option>
+<option value="1927">1927</option>
+<option value="1926">1926</option>
+<option value="1925">1925</option>
+<option value="1924">1924</option>
+<option value="1923">1923</option>
+<option value="1922">1922</option>
+<option value="1921">1921</option>
+<option value="1919">1919</option>
+<option value="1918">1918</option>
+<option value="1916">1916</option>
+<option value="1914">1914</option>
+<option value="1911">1911</option>
+<option value="1908">1908</option>
+<option value="1907">1907</option>
+<option value="1903">1903</option>
+<option value="1902">1902</option>
+<option value="1898">1898</option>
+<option value="1897">1897</option>
+<option value="1896">1896</option>
+</select>
+</div>
+<div class="form-row sort-language">
+<label>Language</label>
+<select name="lang" class="select">
+<option value="all">All</option>
+<option value="multi">Multi Language</option>
+<option value="en">English</option>
+<option value="fr">French</option>
+<option value="hi">Hindi</option>
+<option value="ja">Japanese</option>
+<option value="it">Italian</option>
+<option value="ta">Tamil</option>
+<option value="es">Spanish</option>
+<option value="ml">Malayalam</option>
+<option value="ko">Korean</option>
+<option value="de">German</option>
+<option value="te">Telugu</option>
+<option value="cn">Chinese</option>
+<option value="nl">Dutch</option>
+<option value="ru">Russian</option>
+<option value="pl">Polish</option>
+<option value="sv">Swedish</option>
+<option value="pt">Portuguese</option>
+<option value="bn">Bengali/Bangla</option>
+<option value="fi">Finnish</option>
+<option value="th">Thai</option>
+<option value="tr">Turkish</option>
+<option value="da">Danish</option>
+<option value="kn">Kannada</option>
+<option value="no">Norwegian</option>
+<option value="pa">Punjabi</option>
+<option value="ar">Arabic</option>
+<option value="tl">Tagalog</option>
+<option value="ur">Urdu</option>
+<option value="fa">Persian</option>
+<option value="mr">Marathi</option>
+<option value="cs">Czech</option>
+<option value="sr">Serbian</option>
+<option value="hu">Hungarian</option>
+<option value="ro">Romanian</option>
+<option value="el">Greek</option>
+<option value="gu">Gujarati</option>
+<option value="et">Estonian</option>
+<option value="is">Icelandic</option>
+<option value="ms">Malay</option>
+<option value="vi">Vietnamese</option>
+<option value="hr">Croatian</option>
+<option value="ne">Nepali</option>
+<option value="lt">Lithuanian</option>
+<option value="af">Afrikaans</option>
+<option value="uk">Ukrainian</option>
+<option value="as">Assamese</option>
+<option value="sq">Albanian</option>
+<option value="bg">Bulgarian</option>
+<option value="mn">Mongolian</option>
+<option value="lo">Laothian</option>
+<option value="bo">Tibetan</option>
+<option value="lv">Latvian/Lettish</option>
+<option value="eu">Basque</option>
+<option value="ku">Kurdish</option>
+<option value="ka">Georgian</option>
+<option value="sh">Serbo-Croatian</option>
+<option value="sw">Swahili</option>
+<option value="la">Latin</option>
+<option value="ga">Irish</option>
+<option value="km">Cambodian</option>
+<option value="am">Amharic</option>
+<option value="sk">Slovak</option>
+<option value="ca">Catalan</option>
+<option value="st">Sesotho</option>
+<option value="cy">Welsh</option>
+<option value="my">Burmese</option>
+</select>
+</div>
+<div class="form-row sort-score">
+<label>Sort By</label>
+<select name="sortby" class="select">
+<option value="score">Movie Score</option>
+<option value="popularity">Popularity</option>
+<option value="release">Movie Relase Date</option>
+<option value="latest">Latest Submited</option>
+</select>
+</div>
+<div class="form-row sort-asc-desc">
+<label>Sort</label>
+<select name="sort" class="select">
+<option value="desc">Descending</option>
+<option value="asc">Ascending</option>
+</select>
+</div>
+<div class="form-row btn-row">
+<input type="submit" value="Sort" class="btn">
+</div>
+</form>
+</div>
+<div class="library-box">
+<ul class="clearfix">
+<li>
+<a href="#" data-target="#library-1">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/79/7972c14552b63944252cab809604a97a.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 55%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-1" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/347882/Sleight-2017/">Sleight</a></h3>
+<div class="category">
+<span>Drama</span><span>Thriller</span><span>Action</span><span>Science Fiction</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> A young street magician is left to take care of his little sister after his mother's passing and turns to drug dealing in the Los Angeles party scene to keep a roof over their heads. When he gets into trouble with his supplier, his sister is kidnapped and he is forced to rely on both his sleight of hand and brilliant mind to save her. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/347882/Sleight-2017/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" data-target="#library-2">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/9e/9eef6ff37ff49439d64f75d88fb8dbd6.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 60%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-2" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/376658/Love-Beats-Rhymes-2017/">Love Beats Rhymes</a></h3>
+<div class="category">
+<span>Music</span><span>Drama</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> An aspiring hip-hop artist discovers the world of slam poetry. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/376658/Love-Beats-Rhymes-2017/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" data-target="#library-3">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/9e/9e21fb32475bb85981fa47162d8527c3.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 68%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-3" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/339984/Miracles-from-Heaven-2016/">Miracles from Heaven</a></h3>
+<div class="category">
+<span>Drama</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> A young girl suffering from a rare digestive disorder finds herself miraculously cured after surviving a terrible accident. Based on the book 'Three Miracles From Heaven' by Christy Beam. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/339984/Miracles-from-Heaven-2016/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-4">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/6f/6f12d9c791e4ee01762038da8b8f76ee.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 62%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-4" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/340270/The-Healer-2017/">The Healer</a></h3>
+<div class="category">
+<span>Comedy</span><span>Family</span><span>Drama</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> The film follows a man with an unwanted gift for healing who meets a teenager with cancer who helps him to find himself. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/340270/The-Healer-2017/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-5">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/3c/3c30cd7fa838aa325d060fd9577564ca.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 66%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-5" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/2670/Stephen-King-s-It-1990/">Stephen King's It</a></h3>
+<div class="category">
+<span>Drama</span><span>Horror</span><span>Mystery</span><span>Thriller</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> A series of murders prompts Mike Hanlon to suspect that the supernatural menace that he and a group of friends battled as children has returned. He begins to call his friends to remind them of the oath they swore: if It returned again, they would come back to Derry to do battle again. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/2670/Stephen-King-s-It-1990/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-6">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/a1/a1c2cddde4e5ece553478bed6865e105.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 56%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-6" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/418078/It-Comes-at-Night-2017/">It Comes at Night</a></h3>
+<div class="category">
+<span>Horror</span><span>Thriller</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> Secure within a desolate home as an unnatural threat terrorizes the world, a man has established a tenuous domestic order with his wife and son, but this will soon be put to test when a desperate young family arrives seeking refuge. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/418078/It-Comes-at-Night-2017/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" data-target="#library-7">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/b8/b86f5e3547708a663e1aaef539a0e7f7.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 58%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-7" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/45054/There-Be-Dragons-2011/">There Be Dragons</a></h3>
+<div class="category">
+<span>Drama</span><span>Indie</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> Arising out of the horror of the Spanish Civil War, a candidate for canonization is investigated by a journalist who discovers his own estranged father had a deep, dark and devastating connection to the saint's life.While researching the life of Josemaria Escriva, the controversial founder of Opus Dei, the young journalist Robert uncovers hidden stories of his estranged father Manolo, and is taken on a journey through the dark, terrible secrets of his family’s past. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/45054/There-Be-Dragons-2011/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" data-target="#library-8">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/bf/bf3955bb09972084c567121dc624fa70.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 64%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-8" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/270946/Penguins-of-Madagascar-2014/">Penguins of Madagascar</a></h3>
+<div class="category">
+<span>Adventure</span><span>Animation</span><span>Comedy</span><span>Family</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> Skipper, Kowalski, Rico and Private join forces with undercover organization The North Wind to stop the villainous Dr. Octavius Brine from destroying the world as we know it. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/270946/Penguins-of-Madagascar-2014/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" data-target="#library-9">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/25/25e4d16935d92b915ff657fec0f390b1.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 59%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-9" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/249660/God-s-Not-Dead-2014/">God's Not Dead</a></h3>
+<div class="category">
+<span>Drama</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> Radisson finds the topic of religion painful because his Christian mother died when he was 12, though he had prayed and begged God to spare her life. This may be what led him to study philosophy so in depth that he ultimately became a philosophy professor, but his desire to now avoid the topic of religion does not mesh well with his career as a philosophy professor. His anger at God has him requesting his students quote Friedrich Nietzsche and, in exchange, he promises to allow them to skip the chapter on religion. This is not the only clue the movie makers give that they have read atheist material extensively. Radisson tells Josh that if he won't reach a consensus with the class, he must prove God is not dead. Radisson had already explained this was a metaphor and, taken in the context of Nietzsche's point, Josh does an excellent job of proving this. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/249660/God-s-Not-Dead-2014/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-10">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/76/764a0497e9275cd5cc1180217464fe09.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 72%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-10" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/290762/Miss-You-Already-2015/">Miss You Already</a></h3>
+<div class="category">
+<span>Romance</span><span>Comedy</span><span>Drama</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> The friendship between two life-long girlfriends is put to the test when one starts a family and the other falls ill. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/290762/Miss-You-Already-2015/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-11">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/2b/2b7d4800d2d5e9bb7de4bbe594c99c94.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 50%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-11" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/256961/Paul-Blart-Mall-Cop-2-2015/">Paul Blart: Mall Cop 2</a></h3>
+<div class="category">
+<span>Comedy</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> Security guard Paul Blart is headed to Las Vegas to attend a Security Guard Expo with his teenage daughter Maya before she departs for college. While at the convention, he inadvertently discovers a heist - and it's up to Blart to apprehend the criminals. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/256961/Paul-Blart-Mall-Cop-2-2015/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-12">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/be/be079877ac56ceb47bb24a844654f21f.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 59%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-12" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/340442/Pilgrimage-2017/">Pilgrimage</a></h3>
+<div class="category">
+<span>Action</span><span>Adventure</span><span>Drama</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> In 13th century Ireland a group of monks must escort a sacred relic across an Irish landscape fraught with peril. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/340442/Pilgrimage-2017/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" data-target="#library-13">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/67/67096132b86cf21eccfa023cf50e9de0.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 41%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-13" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/15206/The-Mother-of-Tears-2007/">The Mother of Tears</a></h3>
+<div class="category">
+<span>Horror</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> An ancient urn is found in a cemetery outside Rome. Once opened, it triggers a series of violent incidents: robberies, rapes and murders increase dramatically, while several mysterious, evil-looking young women coming from all over the world are gathering in the city. All these events are caused by the return of Mater Lacrimarum, the last of three powerful witches who have been spreading terror and death for centuries. Alone against an army of psychos and demons, Sarah Mandy, an art student who seems to have supernatural abilities of her own, is the only person left to prevent the Mother of Tears from destroying Rome. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/15206/The-Mother-of-Tears-2007/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" data-target="#library-14">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/fd/fda3002685d975c302d7b3881abff2a3.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 54%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-14" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/339988/The-Circle-2017/">The Circle</a></h3>
+<div class="category">
+<span>Drama</span><span>Thriller</span><span>Science Fiction</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> A young tech worker takes a job at a powerful Internet corporation, quickly rises up the company's ranks, and soon finds herself in a perilous situation concerning privacy, surveillance and freedom. She comes to learn that her decisions and actions will determine the future of humanity. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/339988/The-Circle-2017/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" data-target="#library-15">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/df/dfea2d12d7db1fb87ca5f82440390967.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 60%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-15" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/480626/The-Christmas-Cottage-2017/">The Christmas Cottage</a></h3>
+<div class="category">
+<span>Romance</span><span>TV Movie</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> When Lacey takes a rare break from work for her friend Ava's Christmas Eve wedding, she reconnects with her former flame, Ean. The two decorate the cottage where the newlyweds will spend their honeymoon – a cottage said to bring true love to anyone who stays there – and feel their chemistry return. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/480626/The-Christmas-Cottage-2017/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-16">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/60/607a9028bd554cc011631e00bc3a5a4d.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 60%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-16" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/395814/Rememory-2017/">Rememory</a></h3>
+<div class="category">
+<span>Science Fiction</span><span>Drama</span><span>Mystery</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> The widow of a wise professor stumbles upon one of his inventions that's able to record and play a person's memory. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/395814/Rememory-2017/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-17">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/5a/5a18ecfc2d43de9bc407de13631225b5.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 50%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-17" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/291413/Within-2016/">Within</a></h3>
+<div class="category">
+<span>Thriller</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> A thriller centered around a widower who moves into a seemingly perfect new home with his daughter and new wife. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/291413/Within-2016/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-18">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/1f/1fb46d2be14e156ddab95eee6c4b627d.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 55%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-18" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/330947/Song-to-Song-2017/">Song to Song</a></h3>
+<div class="category">
+<span>Romance</span><span>Music</span><span>Drama</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> In this modern love story set against the Austin, Texas music scene, two entangled couples — struggling songwriters Faye and BV, and music mogul Cook and the waitress whom he ensnares — chase success through a rock ‘n’ roll landscape of seduction and betrayal. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/330947/Song-to-Song-2017/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" data-target="#library-19">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/0e/0e34c7577541c179ba07072979ccad39.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 50%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-19" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/320048/Ratter-2015/">Ratter</a></h3>
+<div class="category">
+<span>Thriller</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> Emma is a young and beautiful graduate student just starting a new life in New York City. Like most people her age, she is always connected - her phone and laptop are constant companions, documenting her most intimate moments. What she doesn't realize is that she's sharing her life with an uninvited and dangerous guest. A hacker is following Emma’s every move. When the voyeuristic thrill of watching her digitally isn't enough, the situation escalates to a dangerous and terrifying level. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/320048/Ratter-2015/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" data-target="#library-20">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/fb/fbfc3a7b0535025183bbdb529ac32db0.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 73%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-20" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/318781/Colonia-2016/">Colonia</a></h3>
+<div class="category">
+<span>Thriller</span><span>History</span><span>Drama</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> A young woman's desperate search for her abducted boyfriend that draws her into the infamous Colonia Dignidad, a sect nobody ever escaped from. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/318781/Colonia-2016/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" data-target="#library-21">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/c3/c3a71bf72f3ca8f108e9a2c46d3e4a01.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 60%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-21" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/11917/Saw-V-2008/">Saw V</a></h3>
+<div class="category">
+<span>Crime</span><span>Horror</span><span>Thriller</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> Detective Hoffman is seemingly the last person alive to carry on the Jigsaw legacy. But when his secret is threatened, he must go on the hunt to eliminate all the loose ends. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/11917/Saw-V-2008/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-22">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/8e/8ea4c5c2a8d5dddb3d8101170e27ad94.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 76%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-22" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/416477/The-Big-Sick-2017/">The Big Sick</a></h3>
+<div class="category">
+<span>Drama</span><span>Comedy</span><span>Romance</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> A couple deals with their cultural differences as their relationship grows. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/416477/The-Big-Sick-2017/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-23">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/bf/bfb537f35b7c44549927b566ff32a7d3.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 65%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-23" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/8456/Never-Back-Down-2008/">Never Back Down</a></h3>
+<div class="category">
+<span>Action</span><span>Drama</span><span>Sport</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> Rebellious Jake Tyler is lured into an ultimate underground fight Scene at his new high school, after receiving threats to the safety of his friends and family Jake decides to seek the mentoring of a veteran fighter who trains him for one final no-holds-barred elimination fight with his nemesis and local martial arts champion Ryan McCarthy. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/8456/Never-Back-Down-2008/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="right-align">
+<a href="#" data-target="#library-24">
+<img alt="" data-original="//lx1.dyncdn.cc/cdn/4b/4b2da9aae2390ef3463ad2e84b363349.jpg" class="lazy" src="/movie-library/1/images/processing.gif">
+<span class="rating-wrap"><span class="rating"><i style="width: 54%;"></i></span></span>
+</a>
+<div class="library-info-box"></div>
+<div class="fade library-info modal" id="library-24" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3><a href="/movie/335791/When-the-Bough-Breaks-2016/">When the Bough Breaks</a></h3>
+<div class="category">
+<span>Mystery</span><span>Drama</span><span>Horror</span> </div>
+<a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-logout"></i></span></a>
+</div>
+<div class="modal-body">
+<div class="content-row clearfix">
+<p> A surrogate mother harbors a deadly secret desire for a family of her own with the husband who is expecting to raise her child. </p>
+</div>
+</div>
+<div class="modal-footer download">
+<strong>Download:</strong>
+<a href="/movie/335791/When-the-Bough-Breaks-2016/" class="green">View Releases</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="pagination">
+<ul>
+<li class="active"><a href="/movie-library/1/">1</a></li>
+<li><a href="/movie-library/2/">2</a></li>
+<li><a href="/movie-library/3/">3</a></li>
+<li><a href="/movie-library/4/">4</a></li>
+<li><a href="/movie-library/5/">5</a></li>
+<li><a href="/movie-library/6/">6</a></li>
+<li><a href="/movie-library/7/">7</a></li>
+<li><a href="/movie-library/2/">&gt;&gt;</a></li>
+<li class="last"><a href="/movie-library/435/">Last</a></li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="bitcoin">
+<div class="bitcoin-icon-wrap">
+<span class="bitcoin-icon"><i class="flaticon-bitcoin red"></i></span>
+</div>
+<span class="bitcoin-text"><span>Bitcoin Donate: </span><a href="/movie-library/1/bitcoin:3Qpdm4ckJ64irx1Nuyw9ZCCvc2qxoqkuBY">3Qpdm4ckJ64irx1Nuyw9ZCCvc2qxoqkuBY</a></span>
+</div>
+<a class="scroll-top" href="#"><i class="flaticon-up"></i></a>
+<ul>
+<li><a href="/">Home</a></li>
+<li class="active"><a href="/home/">Full Home Page</a></li>
+<li><a href="/contact">Dmca</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+<p class="info">1337x 2007 - 2019</p>
+</footer>
+<script src="/static/js/jquery-1.11.0.min.js"></script>
+<script src="/static/js/jquery-ui.js"></script>
+<script src="/static/js/auto-searchv2.js"></script>
+<script src="/static/js/modal.js"></script>
+<script src="/static/js/lazyload.min.js"></script>
+<script src="/static/js/fancySelect.js"></script>
+<script src="/static/js/scrollbar.js"></script>
+<script src="/static/js/main.js"></script>
+<script>
+$('.library-box li').each(function(){
+  var library_header = $(this).find('.modal-header').html();
+  var library_content = $(this).find('.modal-body').html();
+  var library_footer = $(this).find('.modal-footer').html();
+  $(this).find('.library-info-box').append('<div class="library-info-box-header"></div><div class="library-info-box-content"></div><div class="library-info-box-footer"></div><a href="#" class="close"><i class="flaticon-logout"></i></a>');
+  $(this).find('.library-info-box-header').html(library_header);
+  $(this).find('.library-info-box-content').html(library_content);
+  $(this).find('.library-info-box-footer').html(library_footer);
+});
+$('.library-info-box .close').click(function(){
+  $(this).parents('li').removeClass('active');
+  $(this).parents('li').find('.library-info-box').fadeOut();
+  return false;
+});
+
+function movie_library() {
+  $('.library-box li > a').not('.library-info-box-footer a, .library-info-box h3 a').click(function(){
+    if ( $(window).width() >= 1024 ) {
+      $('.library-box li a').removeAttr('data-toggle');
+
+      if( $(this).parent('li').find('.library-info-box').is(':visible') ) {
+        $('.library-box li').removeClass('active');
+        $('.library-box li .library-info-box').stop(true, true).fadeOut();
+      } else {
+        $('.library-box li').removeClass('active');
+        $('.library-box li .library-info-box').stop(true, true).fadeOut();
+        $(this).parent('li').addClass('active');
+        $(this).parent('li').find('.library-info-box').stop(true, true).fadeToggle();
+      }
+      return false;
+    } else {
+      $('.library-box li').removeClass('active');
+      $('.library-box li a').attr('data-toggle', 'modal');
+    }
+  });
+}
+
+
+function  modal_resize(){
+  window_height = $(window).height();
+  modal_height = $('.modal.in .modal-dialog').outerHeight();
+  total_height = window_height - modal_height;
+  console.log(window_height, modal_height, total_height)
+  $('.modal.in .modal-dialog').css('margin-top', total_height / 2);
+}
+
+$('.modal').on('shown.bs.modal', function (e) {
+  modal_resize();
+})
+
+$(window).resize(function(){
+// Calling Swipe Function
+  movie_library();
+  modal_resize()
+});
+movie_library();
+
+  $("img.lazy").lazyload({
+    effect : "fadeIn",
+    placeholder : '/movie-library/1/images/processing.gif'
+  });
+
+  $('.select').fancySelect();
+  $(".content-row").mCustomScrollbar();
+  
+</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c9d740cb91c95fb"></script><div style="text-align:center;"><div style="display:none"><div id="histats_counter"></div>
+
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,3352401,4,511,95,18,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?3352401&101" alt="counter easy hit" border="0"></a></noscript>
+</div></div></body>
+</html>

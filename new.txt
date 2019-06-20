@@ -1,0 +1,1144 @@
+
+
+
+
+
+
+Movie Library | 1337x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Register
+Login
+
+
+
+
+
+
+
+
+
+      function goSearch(){
+	if ($('#autocomplete').val())
+		window.location = "/search/"+escape($('#autocomplete').val())+"/1/";
+                return false
+	}
+
+
+
+Search
+
+
+
+
+
+Home
+Kickass
+SolarMovie
+123Movies
+PirateBay
+
+
+
+
+
+
+
+
+Browse torrents
+
+ Trending Torrents
+ Movie library
+ TV library
+ New TV Episodes
+ Top 100 Torrents
+ Anime
+ Applications
+ Documentaries
+ Games
+ Movies
+ Music
+ Other
+ Television
+ XXX
+
+
+
+1337x Links
+
+ T411
+Cpasbien
+Kickass
+KickassTorrents
+1337x
+Kickass
+SolarMovie
+
+
+
+
+
+
+
+Genre
+
+All
+Action
+Adventure
+Animation
+British
+Comedy
+Crime
+Disaster
+Documentary
+Drama
+Eastern
+Erotic
+Family
+Fan Film
+Fantasy
+Film Noir
+Foreign
+History
+Holiday
+Horror
+Indie
+Kids
+Music
+Musical
+Mystery
+Neo-noir
+Road Movie
+Romance
+Science Fiction
+Short
+Sport
+Sporting Event
+Sports Film
+Suspense
+TV Movie
+Thriller
+War
+Western
+
+
+
+Year
+
+All
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1990
+1989
+1988
+1987
+1986
+1985
+1984
+1983
+1982
+1981
+1980
+1979
+1978
+1977
+1976
+1975
+1974
+1973
+1972
+1971
+1970
+1969
+1968
+1967
+1966
+1965
+1964
+1963
+1962
+1961
+1960
+1959
+1958
+1957
+1956
+1955
+1954
+1953
+1952
+1951
+1950
+1949
+1948
+1947
+1946
+1945
+1944
+1943
+1942
+1941
+1940
+1939
+1938
+1936
+1935
+1934
+1933
+1932
+1931
+1930
+1929
+1928
+1927
+1926
+1925
+1924
+1923
+1922
+1921
+1919
+1918
+1916
+1914
+1911
+1908
+1907
+1903
+1902
+1898
+1897
+1896
+
+
+
+Language
+
+All
+Multi Language
+English
+French
+Hindi
+Japanese
+Italian
+Tamil
+Spanish
+Malayalam
+Korean
+German
+Telugu
+Chinese
+Dutch
+Russian
+Polish
+Swedish
+Portuguese
+Bengali/Bangla
+Finnish
+Thai
+Turkish
+Danish
+Kannada
+Norwegian
+Punjabi
+Arabic
+Tagalog
+Urdu
+Persian
+Marathi
+Czech
+Serbian
+Hungarian
+Romanian
+Greek
+Gujarati
+Estonian
+Icelandic
+Malay
+Vietnamese
+Croatian
+Nepali
+Lithuanian
+Afrikaans
+Ukrainian
+Assamese
+Albanian
+Bulgarian
+Mongolian
+Laothian
+Tibetan
+Latvian/Lettish
+Basque
+Kurdish
+Georgian
+Serbo-Croatian
+Swahili
+Latin
+Irish
+Cambodian
+Amharic
+Slovak
+Catalan
+Sesotho
+Welsh
+Burmese
+
+
+
+Sort By
+
+Movie Score
+Popularity
+Movie Relase Date
+Latest Submited
+
+
+
+Sort
+
+Descending
+Ascending
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sleight
+
+DramaThrillerActionScience Fiction 
+
+
+
+
+ A young street magician is left to take care of his little sister after his mother's passing and turns to drug dealing in the Los Angeles party scene to keep a roof over their heads. When he gets into trouble with his supplier, his sister is kidnapped and he is forced to rely on both his sleight of hand and brilliant mind to save her. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Love Beats Rhymes
+
+MusicDrama 
+
+
+
+
+ An aspiring hip-hop artist discovers the world of slam poetry. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Miracles from Heaven
+
+Drama 
+
+
+
+
+ A young girl suffering from a rare digestive disorder finds herself miraculously cured after surviving a terrible accident. Based on the book 'Three Miracles From Heaven' by Christy Beam. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Healer
+
+ComedyFamilyDrama 
+
+
+
+
+ The film follows a man with an unwanted gift for healing who meets a teenager with cancer who helps him to find himself. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Stephen King's It
+
+DramaHorrorMysteryThriller 
+
+
+
+
+ A series of murders prompts Mike Hanlon to suspect that the supernatural menace that he and a group of friends battled as children has returned. He begins to call his friends to remind them of the oath they swore: if It returned again, they would come back to Derry to do battle again. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+It Comes at Night
+
+HorrorThriller 
+
+
+
+
+ Secure within a desolate home as an unnatural threat terrorizes the world, a man has established a tenuous domestic order with his wife and son, but this will soon be put to test when a desperate young family arrives seeking refuge. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+There Be Dragons
+
+DramaIndie 
+
+
+
+
+ Arising out of the horror of the Spanish Civil War, a candidate for canonization is investigated by a journalist who discovers his own estranged father had a deep, dark and devastating connection to the saint's life.While researching the life of Josemaria Escriva, the controversial founder of Opus Dei, the young journalist Robert uncovers hidden stories of his estranged father Manolo, and is taken on a journey through the dark, terrible secrets of his family’s past. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Penguins of Madagascar
+
+AdventureAnimationComedyFamily 
+
+
+
+
+ Skipper, Kowalski, Rico and Private join forces with undercover organization The North Wind to stop the villainous Dr. Octavius Brine from destroying the world as we know it. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+God's Not Dead
+
+Drama 
+
+
+
+
+ Radisson finds the topic of religion painful because his Christian mother died when he was 12, though he had prayed and begged God to spare her life. This may be what led him to study philosophy so in depth that he ultimately became a philosophy professor, but his desire to now avoid the topic of religion does not mesh well with his career as a philosophy professor. His anger at God has him requesting his students quote Friedrich Nietzsche and, in exchange, he promises to allow them to skip the chapter on religion. This is not the only clue the movie makers give that they have read atheist material extensively. Radisson tells Josh that if he won't reach a consensus with the class, he must prove God is not dead. Radisson had already explained this was a metaphor and, taken in the context of Nietzsche's point, Josh does an excellent job of proving this. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Miss You Already
+
+RomanceComedyDrama 
+
+
+
+
+ The friendship between two life-long girlfriends is put to the test when one starts a family and the other falls ill. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Paul Blart: Mall Cop 2
+
+Comedy 
+
+
+
+
+ Security guard Paul Blart is headed to Las Vegas to attend a Security Guard Expo with his teenage daughter Maya before she departs for college. While at the convention, he inadvertently discovers a heist - and it's up to Blart to apprehend the criminals. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pilgrimage
+
+ActionAdventureDrama 
+
+
+
+
+ In 13th century Ireland a group of monks must escort a sacred relic across an Irish landscape fraught with peril. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Mother of Tears
+
+Horror 
+
+
+
+
+ An ancient urn is found in a cemetery outside Rome. Once opened, it triggers a series of violent incidents: robberies, rapes and murders increase dramatically, while several mysterious, evil-looking young women coming from all over the world are gathering in the city. All these events are caused by the return of Mater Lacrimarum, the last of three powerful witches who have been spreading terror and death for centuries. Alone against an army of psychos and demons, Sarah Mandy, an art student who seems to have supernatural abilities of her own, is the only person left to prevent the Mother of Tears from destroying Rome. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Circle
+
+DramaThrillerScience Fiction 
+
+
+
+
+ A young tech worker takes a job at a powerful Internet corporation, quickly rises up the company's ranks, and soon finds herself in a perilous situation concerning privacy, surveillance and freedom. She comes to learn that her decisions and actions will determine the future of humanity. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Christmas Cottage
+
+RomanceTV Movie 
+
+
+
+
+ When Lacey takes a rare break from work for her friend Ava's Christmas Eve wedding, she reconnects with her former flame, Ean. The two decorate the cottage where the newlyweds will spend their honeymoon – a cottage said to bring true love to anyone who stays there – and feel their chemistry return. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rememory
+
+Science FictionDramaMystery 
+
+
+
+
+ The widow of a wise professor stumbles upon one of his inventions that's able to record and play a person's memory. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Within
+
+Thriller 
+
+
+
+
+ A thriller centered around a widower who moves into a seemingly perfect new home with his daughter and new wife. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Song to Song
+
+RomanceMusicDrama 
+
+
+
+
+ In this modern love story set against the Austin, Texas music scene, two entangled couples — struggling songwriters Faye and BV, and music mogul Cook and the waitress whom he ensnares — chase success through a rock ‘n’ roll landscape of seduction and betrayal. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ratter
+
+Thriller 
+
+
+
+
+ Emma is a young and beautiful graduate student just starting a new life in New York City. Like most people her age, she is always connected - her phone and laptop are constant companions, documenting her most intimate moments. What she doesn't realize is that she's sharing her life with an uninvited and dangerous guest. A hacker is following Emma’s every move. When the voyeuristic thrill of watching her digitally isn't enough, the situation escalates to a dangerous and terrifying level. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Colonia
+
+ThrillerHistoryDrama 
+
+
+
+
+ A young woman's desperate search for her abducted boyfriend that draws her into the infamous Colonia Dignidad, a sect nobody ever escaped from. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Saw V
+
+CrimeHorrorThriller 
+
+
+
+
+ Detective Hoffman is seemingly the last person alive to carry on the Jigsaw legacy. But when his secret is threatened, he must go on the hunt to eliminate all the loose ends. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Big Sick
+
+DramaComedyRomance 
+
+
+
+
+ A couple deals with their cultural differences as their relationship grows. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Never Back Down
+
+ActionDramaSport 
+
+
+
+
+ Rebellious Jake Tyler is lured into an ultimate underground fight Scene at his new high school, after receiving threats to the safety of his friends and family Jake decides to seek the mentoring of a veteran fighter who trains him for one final no-holds-barred elimination fight with his nemesis and local martial arts champion Ryan McCarthy. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+When the Bough Breaks
+
+MysteryDramaHorror 
+
+
+
+
+ A surrogate mother harbors a deadly secret desire for a family of her own with the husband who is expecting to raise her child. 
+
+
+
+Download:
+View Releases
+
+
+
+
+
+
+
+
+
+1
+2
+3
+4
+5
+6
+7
+>>
+Last
+
+
+
+
+
+
+
+
+
+
+Bitcoin Donate: 3Qpdm4ckJ64irx1Nuyw9ZCCvc2qxoqkuBY
+
+
+
+Home
+Full Home Page
+Dmca
+Contact
+
+1337x 2007 - 2019
+
+
+
+
+
+
+
+
+
+
+$('.library-box li').each(function(){
+  var library_header = $(this).find('.modal-header').html();
+  var library_content = $(this).find('.modal-body').html();
+  var library_footer = $(this).find('.modal-footer').html();
+  $(this).find('.library-info-box').append('<div class="library-info-box-header"></div><div class="library-info-box-content"></div><div class="library-info-box-footer"></div><a href="#" class="close"><i class="flaticon-logout"></i></a>');
+  $(this).find('.library-info-box-header').html(library_header);
+  $(this).find('.library-info-box-content').html(library_content);
+  $(this).find('.library-info-box-footer').html(library_footer);
+});
+$('.library-info-box .close').click(function(){
+  $(this).parents('li').removeClass('active');
+  $(this).parents('li').find('.library-info-box').fadeOut();
+  return false;
+});
+
+function movie_library() {
+  $('.library-box li > a').not('.library-info-box-footer a, .library-info-box h3 a').click(function(){
+    if ( $(window).width() >= 1024 ) {
+      $('.library-box li a').removeAttr('data-toggle');
+
+      if( $(this).parent('li').find('.library-info-box').is(':visible') ) {
+        $('.library-box li').removeClass('active');
+        $('.library-box li .library-info-box').stop(true, true).fadeOut();
+      } else {
+        $('.library-box li').removeClass('active');
+        $('.library-box li .library-info-box').stop(true, true).fadeOut();
+        $(this).parent('li').addClass('active');
+        $(this).parent('li').find('.library-info-box').stop(true, true).fadeToggle();
+      }
+      return false;
+    } else {
+      $('.library-box li').removeClass('active');
+      $('.library-box li a').attr('data-toggle', 'modal');
+    }
+  });
+}
+
+
+function  modal_resize(){
+  window_height = $(window).height();
+  modal_height = $('.modal.in .modal-dialog').outerHeight();
+  total_height = window_height - modal_height;
+  console.log(window_height, modal_height, total_height)
+  $('.modal.in .modal-dialog').css('margin-top', total_height / 2);
+}
+
+$('.modal').on('shown.bs.modal', function (e) {
+  modal_resize();
+})
+
+$(window).resize(function(){
+// Calling Swipe Function
+  movie_library();
+  modal_resize()
+});
+movie_library();
+
+  $("img.lazy").lazyload({
+    effect : "fadeIn",
+    placeholder : '/movie-library/1/images/processing.gif'
+  });
+
+  $('.select').fancySelect();
+  $(".content-row").mCustomScrollbar();
+  
+
+
+
+var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,3352401,4,511,95,18,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();
+
+
